@@ -1,0 +1,14 @@
+<!-- Start of Form Errors -->
+{% with messages = get_flashed_messages(with_categories=true, category_filter=['form_error']) %}
+    {% if messages %}
+        <div class="ui error message">
+            <div class="header">Please check again</div>
+            <ul class="list">
+                {% for category, message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+{% endwith %}
+<!-- End of Form Errors -->

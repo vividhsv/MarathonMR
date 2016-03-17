@@ -1,0 +1,72 @@
+/* Nav Menu Correction */
+.ui.menu{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* Footer */
+.footer{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+/* Home Page Style (Can be removed for a new project) */
+
+#hero{
+    padding: 5em 2em;
+}
+.ui.vertical.stripe {
+  padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+  font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+  margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+  clear: both;
+}
+.ui.vertical.stripe p {
+  font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+  margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+  padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.ui.vertical.stripe.segment.last-segment {
+    border-bottom: 0px;
+}
+/* End of Home Page Style*/
+
+
+.ui.action.input input[type="file"] {
+    display: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+    text-align: left;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "MarathonMR",
+  "version": "0.0.0",
+  "authors": [
+    "Vividh S Viswanatha <vividhsv@gmail.com>"
+  ],
+  "description": "MarathonMR",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "MarathonMR/static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.8"
+  }
+}

@@ -1,0 +1,19 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <!-- Start of Messages -->
+        <div class="ui two column centered grid">
+            <div class="column">
+                {% for category, message in messages %}
+                    {% if not category=='form_error' %}
+                        <div class="ui {{ category }} message">
+                            <i class="close icon"></i>
+
+                            <p>{{ message }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+        <!-- End of Messages -->
+    {% endif %}
+{% endwith %}
