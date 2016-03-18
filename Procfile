@@ -1,1 +1,1 @@
-web: python manager.py gunicorn --host=0.0.0.0 --port=$PORT
+web: gunicorn MarathonMR.app:create_app\(\) -b 0.0.0.0:$PORT -w 3
