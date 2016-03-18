@@ -6,7 +6,7 @@ from flask_script.commands import ShowUrls
 from MarathonMR.app import create_app
 from MarathonMR.config import ProdConfig, DevConfig
 
-if os.environ.get("MarathonMR_ENV") == 'prod':
+if os.environ.get("ENV") == 'prod':
     app = create_app(ProdConfig)
 else:
     app = create_app(DevConfig)
@@ -35,4 +35,4 @@ if __name__ == '__main__':
     manager.run()
 
 # To run coverage
-# py.test --cov=cas tests/
+# py.test --cov=MarathonMR tests/

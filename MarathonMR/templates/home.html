@@ -1,20 +1,20 @@
 {% extends "layout/base.html" %}
 
-{% block title %}cas{% endblock %}
+{% block title %}MarathonMR{% endblock %}
 
 {% block content %}
-    <div class="ui center aligned container">
+    <div id="content" class="ui center aligned container">
         <form class="ui form" action="{{ url_for('public.upload') }}" method="post" enctype="multipart/form-data">
             <div class="fields">
-                <div class="ui fluid action input fifteen wide field">
+                <div class="ui huge fluid action input fifteen wide field">
                     <input type="text" readonly>
                     <input type="file" name="file">
-                    <div class="ui teal right labeled icon button">
+                    <div class="ui huge teal right labeled icon button">
                         Select a file<i class="cloud upload icon"></i>
                     </div>
                 </div>
                 <div class="two field">
-                    <button class="ui button" type="submit">Upload</button>
+                    <button class="ui huge button" type="submit">Upload</button>
                 </div>
             </div>
         </form>
